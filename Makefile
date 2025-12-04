@@ -11,5 +11,5 @@ prepare: install
 build:
 	docker buildx build --push \
 		--platform ${PLATFORMS} \
-		-t ${DOCKER_USERNAME}/${IMAGE_NAME}:${IMAGE_VERSION} \
+		-t ${DOCKER_USERNAME}/${IMAGE_NAME} \
 		.
